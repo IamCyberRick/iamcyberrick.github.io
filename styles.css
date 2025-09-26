@@ -1,6 +1,6 @@
 :root{
-  --bg: #353935;       /* your requested background color */
-  --text: #F3F6F7;     /* light text for contrast */
+  --bg: #353935;       
+  --text: #F3F6F7;     
   --muted: #BFC9CC;
   --accent: #1E90FF;
   --max-width: 1000px;
