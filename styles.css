@@ -4,8 +4,8 @@
   --text: #FFFFFF;         /* Primary text — white */
   --muted: #CCCCCC;        /* Muted/secondary text */
   --accent: #FF7A00;       /* Secondary brand — orange */
-  --cta: #2ECC71;          /* CTA (green) */
-  --cta-hover: #27AE60;    /* Darker green for hover */
+  --cta: #138f46;          /* CTA (green) */
+  --cta-hover: #32ad66;    /* Light green for hover */
   --max-width: 1000px;
 }
 
