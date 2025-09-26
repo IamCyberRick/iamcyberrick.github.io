@@ -1,0 +1,52 @@
+:root{
+  --bg: #36454F;       /* your requested background color */
+  --text: #F3F6F7;     /* light text for contrast */
+  --muted: #BFC9CC;
+  --accent: #1E90FF;
+  --max-width: 1000px;
+}
+
+/* Basic reset */
+* { box-sizing: border-box; }
+html,body { height:100%; margin:0; padding:0; }
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.4;
+}
+
+/* Layout helpers */
+.container { max-width: var(--max-width); margin: 0 auto; padding: 0 1rem; }
+
+/* Header */
+.site-header { display:flex; justify-content:space-between; align-items:center; padding:1rem 0; }
+.logo { font-weight:700; font-size:1.1rem; color:var(--text); text-decoration:none; }
+.nav-list { list-style:none; margin:0; padding:0; display:flex; gap:1rem; }
+.nav-list a { color:var(--text); text-decoration:none; font-weight:600; opacity:0.95; }
+
+/* Hero */
+.hero { min-height: calc(100vh - 140px); display:grid; place-items:center; padding:2rem 0; }
+.hero-inner { text-align:center; max-width:60ch; padding:2rem; }
+.hero h1 { margin:0 0 0.5rem; font-size: clamp(2rem, 5vw, 3.25rem); }
+.lead { margin:0 0 1.25rem; color:var(--muted); font-size:1.125rem; }
+.cta {
+  display:inline-block;
+  padding:0.75rem 1.1rem;
+  background:var(--accent);
+  color:#fff;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:700;
+}
+
+/* Footer */
+.site-footer { text-align:center; padding:1rem 0; color:var(--muted); font-size:0.95rem; }
+
+/* Responsive tweaks */
+@media (max-width:600px) {
+  .nav-list { gap:0.6rem; font-size:0.95rem; }
+  .hero-inner { padding:1.25rem; }
+}
